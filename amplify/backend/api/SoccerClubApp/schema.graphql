@@ -1,0 +1,37 @@
+type Competition @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  logoUrl: AWSURL!
+  year: Int
+  country: String
+  ComToMatches: [Match] @hasMany(indexName: "byCompetition", fields: ["id"])
+  imageUrl: AWSURL
+}
+
+type Match @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  dataTime: AWSDateTime!
+  city: String!
+  price: Float!
+  homeScore: Int!
+  awayScore: Int!
+  refereeName: String
+  refereeImage: AWSURL
+  description: String
+  competitionID: ID! @index(name: "byCompetition")
+  imageUrl: AWSURL
+  MatchToTeams: [Team] @hasMany(indexName: "byMatch", fields: ["id"])
+  homeTeam: String
+  awayTeam: String
+}
+
+type Team @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  logoUrl: AWSURL!
+  coach: String
+  city: String
+  country: String
+  imageUrl: AWSURL
+  matchID: ID! @index(name: "byMatch")
+} 

@@ -1,0 +1,172 @@
+/***************************************************************************
+ * The contents of this file were generated with Amplify Studio.           *
+ * Please refrain from making any modifications to this file.              *
+ * Any changes to this file will be overwritten when running amplify pull. *
+ **************************************************************************/
+
+/* eslint-disable */
+import * as React from "react";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { Flex, Text } from "@aws-amplify/ui-react";
+export default function PlayerLiten(props) {
+  const { overrides, ...rest } = props;
+  return (
+    <Flex
+      gap="24px"
+      direction="row"
+      width="480px"
+      height="100px"
+      justifyContent="center"
+      alignItems="center"
+      position="relative"
+      padding="24px 24px 24px 24px"
+      backgroundColor="rgba(255,255,255,1)"
+      {...getOverrideProps(overrides, "PlayerLiten")}
+      {...rest}
+    >
+      <Flex
+        gap="0"
+        direction="row"
+        width="148px"
+        height="39px"
+        justifyContent="center"
+        alignItems="center"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Frame")}
+      >
+        <Flex
+          gap="16px"
+          direction="column"
+          width="208px"
+          height="39px"
+          justifyContent="center"
+          alignItems="flex-end"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "Text37732811")}
+        >
+          <Flex
+            gap="16px"
+            direction="column"
+            width="174px"
+            height="52px"
+            justifyContent="center"
+            alignItems="center"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            {...getOverrideProps(overrides, "Headline37732812")}
+          >
+            <Text
+              fontFamily="Inter"
+              fontSize="20px"
+              fontWeight="700"
+              color="rgba(13,26,38,1)"
+              lineHeight="25px"
+              textAlign="left"
+              display="block"
+              direction="column"
+              justifyContent="unset"
+              width="unset"
+              height="unset"
+              gap="unset"
+              alignItems="unset"
+              shrink="0"
+              alignSelf="stretch"
+              position="relative"
+              padding="0px 0px 0px 0px"
+              whiteSpace="pre-wrap"
+              children="AwayTeam"
+              {...getOverrideProps(overrides, "AwayTeam37732813")}
+            ></Text>
+          </Flex>
+        </Flex>
+      </Flex>
+      <Flex
+        gap="8px"
+        direction="column"
+        width="unset"
+        height="unset"
+        justifyContent="flex-start"
+        alignItems="center"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Name")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="700"
+          color="rgba(13,26,38,1)"
+          lineHeight="25px"
+          textAlign="center"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="VS"
+          {...getOverrideProps(overrides, "VS")}
+        ></Text>
+      </Flex>
+      <Flex
+        gap="16px"
+        direction="column"
+        width="171px"
+        height="39px"
+        justifyContent="center"
+        alignItems="flex-end"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Text37732816")}
+      >
+        <Flex
+          gap="16px"
+          direction="column"
+          width="163px"
+          height="52px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 27px"
+          {...getOverrideProps(overrides, "Headline37732817")}
+        >
+          <Text
+            fontFamily="Inter"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(13,26,38,1)"
+            lineHeight="25px"
+            textAlign="left"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            width="unset"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            alignSelf="stretch"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="AwayTeam"
+            {...getOverrideProps(overrides, "AwayTeam37732818")}
+          ></Text>
+        </Flex>
+      </Flex>
+    </Flex>
+  );
+}
